@@ -1,0 +1,145 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.three {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.three .content {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  mix-blend-mode: difference;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.three .content__title {
+  font-size: 26px;
+  font-weight: 800;
+  background: linear-gradient(270deg, #ffb04f 40%, #ff8961, #ff50b8, #cb5eee);
+  color: #9d8eee;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.three .content__subtitle {
+  margin-bottom: 1.5rem;
+  font-size: 14px;
+  color: #fff;
+}
+
+.three .content__link {
+  display: inline-flex;
+  align-items: center;
+  color: inherit;
+}
+
+.three .content__link:last-child {
+  margin-left: 1rem;
+}
+
+.three .content__link:hover .content__link--icon,
+.three .content__link:hover .content__link--text {
+  opacity: 0.65;
+  transform: translateX(5px);
+}
+
+.three .content__link--wrp {
+  display: flex;
+  align-items: center;
+}
+
+.three .content__link--icon {
+  width: 100%;
+  max-width: 1.5rem;
+  transition: all 0.4s cubic-bezier(0.6, -0.05, 0.01, 0.99);
+}
+
+.three .content__link--text {
+  margin-left: 0.5rem;
+  display: block;
+  text-decoration: underline;
+  font-size: 14px;
+  color: #fff;
+  transition: all 0.4s cubic-bezier(0.6, -0.05, 0.01, 0.99);
+}
+
+@media (min-width: 768px) {
+  .three .content__title {
+    letter-spacing: -0.1rem;
+  }
+  .three .content__link:last-child {
+    margin-left: 2rem;
+  }
+  .three .content__link--icon {
+    max-width: 2.5rem;
+  }
+  .three .content__link--text {
+    margin-left: 1rem;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1450px) {
+  .three .content__title {
+    font-size: 62px;
+  }
+  .three .content__subtitle {
+    font-size: 28px;
+  }
+  .three .content__link--text {
+    font-size: 22px;
+  }
+}
